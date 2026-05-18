@@ -1,59 +1,154 @@
-# EmployeeManagementSystem
+# Employee Management System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.5.
+A modern Employee Management System built using Angular 21.
 
-## Development server
+## Tech Stack
 
-To start a local development server, run:
+- Angular CLI : 21.2.11
+- Angular : 21.2.13
+- Node.js : 24.13.1
+- TypeScript
+- Angular Material
+- SASS
 
-```bash
-ng serve
+---
+
+# Features
+
+- Employee Dashboard
+- Employee CRUD Operations
+- Department Management
+- Attendance Management
+- Leave Management
+- Role Based Access
+- Search & Filter
+- Responsive Design
+- API Integration
+- Authentication & Authorization
+
+---
+
+# Project Setup
+
+## Clone Repository
+
+## Navigate to Project
+
+## Install Dependencies
+
+
+## Run Application
+- ng serve
+
+
+## Application will run on:
+- http://localhost:4200
+
+
+---
+
+## Build Project
+- ng build
+
+
+# Project Structure
+
+```text
+src/
+│
+├── app/
+│   ├── core/
+│   ├── shared/
+│   ├── layout/
+│   ├── models/
+│   ├── services/
+│   ├── guards/
+│   ├── interceptors/
+│   ├── pages/
+│   │   ├── dashboard/
+│   │   ├── employees/
+│   │   ├── attendance/
+│   │   ├── leaves/
+│   │   └── departments/
+│   │
+│   ├── app.routes.ts
+│   ├── app.config.ts
+│   └── app.component.ts
+│
+├── assets/
+├── environments/
+└── styles.scss
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+# Routing Example
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```typescript
+export const routes: Routes = [
+  {
+    path: '',
+    component: DashboardComponent
+  },
+  {
+    path: 'employees',
+    component: EmployeeListComponent
+  }
+];
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
+# API Configuration
+
+Update API URL inside:
+
+```text
+src/environments/environment.ts
 ```
 
-## Building
+Example:
 
-To build the project run:
-
-```bash
-ng build
+```typescript
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:8080/api'
+};
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+# Angular Material Setup
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Install Angular Material:
 
 ```bash
-ng e2e
+ng add @angular/material
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+# Recommended VS Code Extensions
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Angular Language Service
+- ESLint
+- Prettier
+- Material Icon Theme
+
+---
+
+# Future Enhancements
+
+- Payroll Management
+- Employee Analytics
+- Face Recognition Attendance
+- Email Notifications
+- Dark Mode
+- Mobile App Support
+
+---
+
+# Author
+
+Saurabh Lomte
+Software Developer | Angular Developer | Java Developer
