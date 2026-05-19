@@ -1,0 +1,24 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #111827;
+}
+
+.nav-link {
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #1f2937;
+}
+
+.submenu {
+  padding-left: 15px;
+}
+
+.submenu .nav-link {
+  font-size: 14px;
+  color: #cbd5e1 !important;
+}
