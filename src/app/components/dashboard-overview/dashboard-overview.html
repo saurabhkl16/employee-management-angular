@@ -1,0 +1,26 @@
+<div class="dashboard-overview">
+  <h4 class="mb-3">Dashboard Overview</h4>
+  <div class="overview-content">
+    @for (item of dashboardOverviewData; track item.title) {
+      <div class="overview-card d-flex">
+        <img [src]="item.image" alt="image" height="70px" />
+        <div class="card-content p-2">
+          <p class="m-0">{{ item.title }}</p>
+          <p class="m-0">{{ item.value }}</p>
+        </div>
+      </div>
+    }
+  </div>
+  <h4 class="mb-3 mt-3">Leave Details</h4>
+  <div class="overview-content">
+    @for (item of leaveDetails; track item.title) {
+      <div class="overview-card d-flex">
+        <img [src]="item.image" alt="image" height="70px" />
+        <div class="card-content p-2">
+          <p class="m-0">{{ item.title }}</p>
+          <p class="m-0">{{ item.value }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</div>

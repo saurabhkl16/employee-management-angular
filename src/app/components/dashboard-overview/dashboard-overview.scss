@@ -1,0 +1,16 @@
+.overview-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+
+  .overview-card {
+    background-color: white;
+    font-weight: bold;
+
+    img {
+        background-color: rgb(30, 114, 198);
+        padding: 10px;
+    }
+  }
+}

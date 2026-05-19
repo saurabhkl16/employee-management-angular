@@ -1,77 +1,67 @@
 <div class="sidebar d-flex flex-column flex-shrink-0 p-3 text-white">
-
   <ul class="nav nav-pills flex-column mb-auto">
-
+    <!-- Dashboard -->
     <li class="nav-item">
-      <a href="#" class="nav-link active text-white">
+      <a
+        [routerLink]="['/dashboard/overview']"
+        routerLinkActive="active"
+        class="nav-link text-white"
+      >
         Dashboard
       </a>
     </li>
 
-    <!-- Employee Menu -->
+    <!-- Employees -->
     <li>
-
-      <a
-        class="nav-link text-white d-flex justify-content-between align-items-center"
+      <!-- <a
+        class="nav-link text-white d-flex align-items-center"
         data-bs-toggle="collapse"
         href="#employeeMenu"
+      > -->
+      <a
+        [routerLink]="['/dashboard/employee-list']"
+        routerLinkActive="active"
+        class="nav-link text-white d-flex"
       >
         <span>Employees</span>
-        <span>></span>
       </a>
 
-      <div class="collapse submenu" id="employeeMenu">
-
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-
+      <!-- Sub Menu -->
+      <!-- <div class="collapse submenu" id="employeeMenu">
+        <ul class="list-unstyled ms-3">
           <li>
-            <a href="#" class="nav-link text-white">
+            <a [routerLink]="['/dashboard/add-employee']" class="nav-link text-white">
               Add Employee
             </a>
           </li>
 
           <li>
-            <a href="#" class="nav-link text-white">
+            <a [routerLink]="['/dashboard/employee-list']" class="nav-link text-white">
               Employee List
             </a>
           </li>
-
         </ul>
-
-      </div>
-
+      </div> -->
     </li>
 
+    <!-- Departments -->
     <li>
-      <a href="#" class="nav-link text-white">
-        Departments
-      </a>
+      <a href="#" class="nav-link text-white"> Departments </a>
     </li>
 
+    <!-- Attendance -->
     <li>
-      <a href="#" class="nav-link text-white">
-        Attendance
-      </a>
+      <a href="#" class="nav-link text-white"> Attendance </a>
     </li>
 
+    <!-- Salary -->
     <li>
-      <a href="#" class="nav-link text-white">
-        Salary
-      </a>
+      <a href="#" class="nav-link text-white"> Salary </a>
     </li>
 
+    <!-- Settings -->
     <li>
-      <a href="#" class="nav-link text-white">
-        Settings
-      </a>
+      <a href="#" class="nav-link text-white"> Settings </a>
     </li>
-
   </ul>
-
-  <hr />
-
-  <button class="btn btn-danger w-100">
-    Logout
-  </button>
-
 </div>
