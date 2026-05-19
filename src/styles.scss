@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Forms */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  padding: 5px;
+}
+
+/* Buttons */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+// global css
+
+.error-message {
+  color: red;
+  font-size: 0.7rem;
+  min-height: 0.9rem;
+  display: block;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-align: start;
+}
