@@ -1,0 +1,18 @@
+.employee-form {
+    background-color: white;
+    padding: 20px;
+}
+
+form {
+  > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 20px;
+  }
+}
+
+input.error {
+  border: 1px solid red !important;
+  background-color: rgb(236, 192, 192);
+}

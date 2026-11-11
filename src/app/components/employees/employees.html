@@ -2,10 +2,10 @@
   <h4>Employee List</h4>
   <div class="actions d-flex justify-content-between mb-3 mt-2">
     <div class="filter">
-      <input type="text" placeholder="search employee"/>
+      <input type="text" placeholder="search employee" />
     </div>
     <div class="add-employee">
-      <button class="btn btn-success">Add Employee</button>
+      <button class="btn btn-success" [routerLink]="['/dashboard/create-employee']">Add Employee</button>
     </div>
   </div>
   <div class="employee-list">

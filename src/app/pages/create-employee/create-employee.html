@@ -1,0 +1,76 @@
+<div class="employee-form">
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <!-- Personal Information -->
+    <h3>Personal Information</h3>
+    <div class="pt-2 pb-5" formGroupName="personalInfo">
+      <input
+        type="text"
+        formControlName="employeeId"
+        id="employeeId"
+        placeholder="Enter ID"
+        [ngClass]="{
+          error:
+            employeeForm.get('personalInfo.employeeId')?.invalid &&
+            employeeForm.get('personalInfo.employeeId')?.touched,
+        }"
+      />
+      <input
+        type="text"
+        formControlName="firstName"
+        id="firstName"
+        placeholder="Enter first name"
+      />
+      <input type="text" formControlName="lastName" id="lastName" placeholder="Enter last name" />
+      <input type="date" formControlName="DOB" id="DOB" />
+
+      <select formControlName="gender" id="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <select formControlName="maritalStatus" id="maritalStatus">
+        <option value="">Select</option>
+        <option value="married">Married</option>
+        <option value="unmarried">Unmarried</option>
+      </select>
+
+      <input
+        type="text"
+        formControlName="education"
+        id="education"
+        placeholder="Enter your education"
+      />
+    </div>
+
+    <!-- Contact Information -->
+    <h3>Contact Information</h3>
+    <div class="pt-2 pb-5" formGroupName="contactInfo">
+      <input type="email" formControlName="email" placeholder="Enter email" />
+      <input type="text" formControlName="mobile" placeholder="Enter mobile" />
+      <input type="text" formControlName="currAddress" placeholder="Enter address" />
+      <input type="text" formControlName="perAddress" placeholder="Enter address" />
+    </div>
+
+    <!-- Employment Information -->
+    <h3>Employment Information</h3>
+    <div class="pt-2 pb-5" formGroupName="employmentInfo">
+      <input type="text" formControlName="department" placeholder="Enter department" />
+      <input type="text" formControlName="designation" placeholder="Enter designation" />
+      <input type="date" formControlName="joiningDate" />
+    </div>
+
+    <!-- Bank Information -->
+    <h3>Bank Details</h3>
+    <div class="pt-2 pb-5" formGroupName="bankInfo">
+      <input type="text" formControlName="bankName" placeholder="Enter bank name" />
+      <input type="text" formControlName="accountNumber" placeholder="Enter account number" />
+      <input type="text" formControlName="IFSC" placeholder="Enter IFSC" />
+    </div>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-primary fw-bold" type="submit">Register Employee</button>
+    </div>
+  </form>
+</div>
